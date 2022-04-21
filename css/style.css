@@ -1,0 +1,345 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* start header  */
+header{
+    width: 100%;
+    height: 600px;
+    background-image: url('../imgs/blue_bg.png');
+    background-size: cover;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+ }
+nav .logo{
+    width: 135px;
+    height: 76px;
+}
+nav .logo img{
+    width: 100%;
+}
+nav .navbar{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+nav .navbar li{
+    padding: 0 28px;
+}
+nav .navbar li a{
+    text-decoration: none;
+    color: #777;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    position: relative;
+}
+nav .navbar li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgb(5, 5, 119);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+nav .navbar li:hover a::after,nav .navbar li a.active::after{
+    width: 80%;
+    left: 0;
+}
+nav .navbar li:hover a,nav .navbar li a.active{
+    color: rgb(5, 5, 119);
+    font-weight: bold;
+    font-size: 18px;
+}
+nav .login-btn{
+    position: absolute;
+    right: 50px;
+}
+nav .login-btn p{
+    position: absolute;
+    top: 6px;
+    left: 46px;
+    left: 10p;
+    font-size: 21px;
+    cursor: pointer;
+}
+header .header-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-content .header-text{
+width: 50%;
+text-align: center;
+margin-top: 18%;
+}
+.header-content .header-text h1{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: gray;
+}
+.header-content .header-text h1 span{
+    color: rgb(87, 13, 156);
+}
+.header-content .header-text p{
+    font-size: 18px;
+    color: #777;
+    width: 55%;
+    margin: auto;
+    padding: 17px 0;
+    text-align: left;
+    line-height: 28px;
+}
+.header-content .header-img{
+width: 50%;
+position: relative;
+}
+.header-content .header-img img{
+    width: 100%;
+    z-index: 1;
+}
+.header-content .header-img img:nth-child(2) {
+    z-index: 2;
+    position: absolute;
+    top: 51px;
+    right: 30%;
+    width: 50%;
+}
+.header-content .header-img img:nth-child(3) {
+    position: absolute;
+    bottom: -64px;
+    right: 0px;
+}
+.header-content .header-img img:nth-child(4){
+    position: absolute;
+    z-index: 3;
+    bottom: -113px;
+    right: 0px;
+}
+.img{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: -112%;
+}
+.img img{
+width: 100%;
+}
+/* start curve section  */
+.curve{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    padding: 100px 0;
+    position: relative;
+}
+.curve img{
+    width: 100%;
+    height: 100%;
+}
+.curve .item1{
+    width: 29%;
+    position: absolute;
+    top: 23%;
+    left: -23%;
+}
+.item1 h3{
+    padding: 10px 0;
+    color: gray;
+    text-align: center;
+}   
+.item1 p{
+    color: #777;
+    width: max-content;
+}
+.curve .item2{
+    position: absolute;
+    width: 27%;
+    top: 43%;
+    left: 32%;
+}
+.curve .item2 h3{
+    padding: 6px 0;
+    color: gray;
+    text-align: center;
+}
+.curve .item2 p{
+    font-size: 17px;
+    width: 167%;
+    text-align: center;
+    margin-left: -70px;
+    color: #777;
+}
+.curve .item3{
+    width: 39%;
+    position: absolute;
+    right: -51px;
+    bottom: -75px;
+}
+.curve .item3 img{
+    width: 78%;
+}
+.curve .item3 h3{
+    padding: 6px 0;
+    color: gray;
+    text-align: center;
+}
+.curve .item3 p{
+    color: #777;
+    text-align: center;
+}
+.curve .item4{
+   
+    position: absolute;
+    width: 33%;
+    left: -128px;
+    bottom: -70px;
+}
+.curve .item4 img{
+position: relative;
+}
+.curve .item4 .item-text{
+    position: absolute;
+    top: 75px;
+    left: 32%;
+    color: white;
+    margin-left: -13px;
+}
+.curve .item4 .item-text h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+/* start second section  */
+.second{
+    width: 80%;
+    margin: auto;
+  padding:  126px 0 0 0;
+}
+.second .second-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.second .second-imgs .img1 , .img3{
+width: 20%;
+}
+.second .second-imgs .img1 img ,.img3 img{
+    width: 100%;
+}
+.second-imgs .img2 img{
+    width: 88%;
+    margin-left: 6%;
+}
+.second .icon-img{
+    margin-top: 13%;
+    cursor: pointer;
+}
+.second .icon-img .right-icon img , .second .icon-img .left-icon img{
+    width: 50%;
+}
+.second .right-icon{
+    position: absolute;
+    right: 27%;
+}
+.second .left-icon{
+    position: absolute;
+    left: 30%;
+}
+.second-text{
+    text-align: center;
+    margin-top: -24px;
+}
+.second-text h2{
+    color: gray;
+    margin-bottom: 14px;
+}
+.second-text p{
+    color: #777;
+    font-size: 17px;
+    line-height: 23px;
+    position: absolute;
+    letter-spacing: 1px;
+    left: 42%;
+}
+.footer{
+    background-image: url('../imgs/Group\ 1131.png');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+.footer-content{
+display: flex;
+width: 80%;
+margin: auto;
+position: relative;
+}
+.right-img{
+    position: absolute;
+    width: 50%;
+    right: 61px;
+    top: 138px;
+  }
+ .right-img img{
+    width: 100%;
+}
+.footer .footer-content .left-content{
+    position: absolute;
+    top: 336px;
+}
+.footer .footer-content  .button{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.footer .footer-content  .button .text{
+    position: absolute;
+    top: 5px;
+    left: 14px;
+    display: flex;
+}
+.footer .footer-content  .button .text p{
+    margin: 10px 0 0 6px;
+}
+.footer .footer-content  .button .text2{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    display: flex;
+}
+.footer .footer-content  .button .text2 p{  
+    margin: 6px -5px 0 4px;
+}
+ .button .apple-button{
+margin-right: 23px;
+}
+.footer .left-content .navbar{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 121px;
+}
+.footer .left-content .navbar li a{
+    text-decoration: none;
+    padding: 8px;
+    font-size: 14px;
+    color: black;
+}
+.footer .left-content .navbar li:hover a{
+    border-bottom: 1px solid blue;
+    color: blue;
+}
+.footer .left-content .footer-icon{
+    padding: 21px;
+}
+.footer .left-content .footer-icon img{
+    padding: 0 15px;
+    cursor: pointer;
+
+}
